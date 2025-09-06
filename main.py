@@ -12,7 +12,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 config = AuthXConfig()
-config.JWT_SECRET_KEY = "SECRET_KEY" 
+config.JWT_SECRET_KEY = "" 
 config.JWT_ACCESS_COOKIE_NAME = "access token" 
 config.JWT_TOKEN_LOCATION = ['cookies'] 
 security = AuthX(config=config)
